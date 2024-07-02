@@ -11,10 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="">
         <span class="logo">TruCourt</span>
         <nav class="navigation">
           <ul>
@@ -40,37 +41,37 @@
         <div class="image rounded mt-4"></div>
       </div>
 
-      <div class="container promote">
+      <div class="container promote" style="overflow: hidden;">
         <div class="left">
-          <div class="description">
-            <span class="h2 fs-2 lh-2"
+          <div class="description hidden hidden-up">
+            <span class="h2 fs-2"
               >100% of our results are<br />
               obtained within a clearly<br />
               defined time frame, even<br />
               from scratch.
             </span>
-            <span class="h4 fw-400 mt-3">
+            <span class="h4 fw-400 mt-3 hidden hidden-slideInH4">
               This is because we form small groups of up<br />
               4-6 people and select partners based<br />
               on your level of training.
             </span>
             <a class="btn mt-4" href="#">Sign up for class</a>
           </div>
-          <div class="aside rounded">
+          <div class="aside rounded hidden hidden-downRight" style="overflow: hidden;">
             <div class="aside-desc">
-              <span class="fs-3 fw-400">1500+ balances</span>
-              <span class="fs-7 lh-4 mt-2"
+              <span class="fs-3 fw-400 hidden hidden-up trd">1500+ balances</span>
+              <span class="fs-7 lh-4 mt-2 hidden hidden-down trd"
                 >We learned to play during the 7 years of our<br />
                 school's operation.
               </span>
             </div>
-            <div class="aside-bg"></div>
+            <div class="aside-bg hidden hidden-downRight trd"></div>
           </div>
         </div>
-        <div class="right image rounded"></div>
+        <div class="right image rounded hidden hidden-right"></div>
       </div>
 
-      <div class="container apply-form bg-four rounded text-white">
+      <div class="container apply-form bg-four rounded text-white hidden hidden-down" style="overflow: hidden;">
         <div class="flex flex-column align-items-center text-center" style="z-index: 3;">
         <div class="flex flex-column mt-2">
           <span class="h2">Sign up for a trial lesson with<br />the best trainers</span>
@@ -94,7 +95,7 @@
       </div>
       </div>
 
-      <div class="container advantages flex flex-column">
+      <div class="container advantages flex flex-column ">
         <div class="faq flex flex-row gap-3 align-items-center">
           <span class="h2">Why choose our school?</span>
           <span class="h4 fw-400"
