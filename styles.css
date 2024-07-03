@@ -167,15 +167,15 @@ nav ul li a:hover {
 }
 
 .apply-form {
-  height: 25rem;
+  /* height: 20rem; */
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 .apply-form::before {
   position: absolute;
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
   content: "";
   top: 0;
   right: -60px;
@@ -251,6 +251,11 @@ nav ul li a:hover {
   font-weight: 400;
   line-height: 2rem;
 }
+.h3-2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
 .h4 {
   font-size: 1.2rem;
   font-weight: 200;
@@ -284,7 +289,9 @@ nav ul li a:hover {
 .fw-800 {
   font-weight: 800;
 }
-
+.fs-8 {
+  font-size: 0.9rem;
+}
 .fs-7 {
   font-size: 1.05rem;
 }
@@ -438,7 +445,7 @@ a {
 .input-container {
   display: flex;
   flex-direction: row;
-  width: 400px;
+  width: 360px;
   color: #00000076;
 }
 .input-container label {
@@ -518,6 +525,54 @@ a {
 .apply-form.hidden-down {
   transition: all 1s ease-out;
 }
+.hidden-left-box {
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+.hidden-up-box {
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 1s ease, max-width 1s ease;
+  transition-delay: 1s;
+  transform-origin: left center;
+}
+@keyframes hideThenShow {
+  0% {
+    display: none;
+    transform: scaleX(0);
+  }
+  25% {
+    display: none;
+    transform: scaleX(0);
+  }
+  50% {
+    display: none;
+    transform: scaleX(0);
+  }
+  75% {
+    display: block;
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.hidden-right-box {
+  transition: transform 1s;
+  /* transition-delay: 3s; */
+  transform: translateX(100%);
+}
+.hidden-box4 {
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1s ease, max-height 1s ease;
+  transition-delay: 0.5s;
+}
+.hidden-box5 {
+  transition: all 1s;
+  transform: translateX(-100%);
+  transition-delay: 1s;
+}
 .trd {
   transition-delay: 0.3s;
 }
@@ -527,7 +582,18 @@ a {
   transform: translateX(0) translateY(0);
   /* line-height: 0; */
 }
-
+.show.hidden-up-box {
+  opacity: 1;
+  max-width: 312px;
+  filter: blur(0);
+  transform: scaleX(1);
+  /* line-height: 0; */
+}
+.show.hidden-box4 {
+  opacity: 1;
+  max-height: 100%;
+  filter: blur(0);
+}
 .show.hidden-openUp {
   opacity: 1;
   filter: blur(0);
